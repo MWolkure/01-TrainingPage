@@ -1,0 +1,151 @@
+.section {
+  background-color: #474747;
+}
+
+.section__wrap {
+  position: relative;
+  margin: 0 auto;
+  max-width: 600px;
+  padding-bottom: 50px;
+}
+
+.section__text {
+  margin: 0;
+  font-size: 39px;
+  line-height: 39px;
+  color: #f5c506;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-left: 2%;
+  margin-bottom: 80px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.section__banner {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  margin: 0;
+  position: absolute;
+  top: 8px;
+  left: 25px;
+  z-index: 2;
+  letter-spacing: -1px;
+}
+
+.section__banner-wrap::before {
+  content: "";
+  background-color: #f5c506;
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: -40px;
+}
+
+.section__img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: relative;
+}
+
+.section__img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.section__img--small {
+  margin-top: 20%;
+}
+
+.section__list {
+  display: none;
+}
+
+@media(min-width: @desktop) {
+
+  .section {
+    padding-left: 0;
+    text-align: center;
+    padding-bottom: 104px;
+  }
+
+  .section__wrap {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+
+  .section__text {
+    font-size: 43px;
+    line-height: 43px;
+    font-weight: 400;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .section__img-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .section__img-wrap {
+    margin-left: 20px;
+  }
+
+  .section__row {
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 35px;
+    padding-bottom: 30px;
+  }
+
+  .section__row::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #f5c506;
+    position: absolute;
+    top: 4px;
+    left: 0;
+  }
+}
+
+@media(min-width: @desktop-max) {
+  
+  .section__desktop-wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1020px;
+  }
+
+ .section__banner-wrap::before {
+    left: -10px;
+  }
+
+  .section__banner {
+    left: -4px;
+  }
+
+  .section__list {
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: #a9a9a7;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: left;
+    max-width: 398px;
+  }
+}
